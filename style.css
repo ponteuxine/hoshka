@@ -1,13 +1,95 @@
-<div class="container">
-  <div class="row">
-    <div class="logo"></div>
-  </div>
-  <div class="row">
-    
-      <ul>
-        <li><a href="#">Статьи</a></li>
-        <li><a href="#">Мы в соцсетях</a></li>
-        <li><a href="#">Прислать историю</a></li>
-      </ul>
-     </div>
-</div>
+﻿@import url("https://fonts.googleapis.com/css?family=Pangolin");
+body {
+  background: white;
+  font-size: 1.5vh;
+  font-family: 'Pangolin', cursive;
+  width: 100vw;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+.container .logo {
+  height: 30vh;
+  width: 60vw;
+  background: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: url("http://i.piccy.info/i9/45eda6fca173ab6e3f30cdb4abb436ef/1486995269/14171/1114304/hoshka_logo.png") no-repeat;
+  background-size: 100%;
+}
+.container ul {
+  padding: 2em 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.container ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 4em;
+  line-height: 2em;
+}
+.container ul li a:hover {
+  color: #EE332A;
+  background: #FDBA2D;
+}
+@media screen and (min-width: 740px) {
+  .container ul {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    padding: 2vh 20vw;
+  }
+  .container ul a {
+    font-size: 2em !important;
+    padding: 1em 1em 1em 1em;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 980px) {
+  .container ul {
+    padding: 2vh 20vw;
+  }
+}
